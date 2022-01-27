@@ -1,0 +1,18 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "my first node project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "first",
+    "kmit"
+  ],
+  "author": "kiranmayee",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
