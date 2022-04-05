@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ body {
+  background-image: url("https://wallpaperaccess.com/full/3468697.jpg");
+  background-size: cover;
+}
+h2{
+ margin-top:300px;
+ }
+button{
+  font-style: oblique;
+  }
+
+h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 60px;
+}
+
+
+.register
+{
+    
+        background-color:  #08080898;
+        width: 500px;
+        margin: 0px 0px 0px 500px;
+        color: white;
+        font-size: 18px;
+        padding: 20px;
+        border-radius: 10px;
+}
+#register{
+    margin-left: 100px;
+}
+label{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: normal;
+}
+#name{
+    width: 300px;
+    border: none;
+    border-radius: 3px;
+    outline: 0px;
+    padding: 7px;
+}
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #fbafe3;
+	background:linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+	background-color:#f78ab5;
+	border-radius:6px;
+	border:1px solid #ee1eb5;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #c70067;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+	background-color:#ee017bc2;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+</style>
+<body>
+    <h1 style="color:rgb(255, 255, 255);">IPL Score Prediction 🏆</h1>
+    <div class = "register">  
+       
+      <form id="register" action="predict"  method="POST">
+          
+          <label> Batting Team: </label><br>
+          <select name="batting_team" style="font-size:10pt;">
+                        <option value="none">--- Select a Batting team ---</option>
+                        <option value="Mumbai Indians">Mumbai Indians</option>
+                        <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                        <option value="Chennai Super Kings">Chennai Super Kings</option>
+                        <option value="Rajasthan Royals">Rajasthan Royals</option>
+                        <option value="Kings XI Punjab">Kings XI Punjab</option>
+                        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                        <option value="Delhi Daredevils">Delhi Capitals</option>
+                        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                    </select><br><br>
+          <label> Bowling Team: </label><br>
+          <select  name="bowling_team" style="font-size:10pt;">
+                        <option value="none">--- Select a Bowling team ---</option>
+                        <option value="Mumbai Indians">Mumbai Indians</option>
+                        <option value="Kolkata Knight Riders">Kolkata Knight Riders</option>
+                        <option value="Chennai Super Kings">Chennai Super Kings</option>
+                        <option value="Rajasthan Royals">Rajasthan Royals</option>
+                        <option value="Kings XI Punjab">Kings XI Punjab</option>
+                        <option value="Royal Challengers Bangalore">Royal Challengers Bangalore</option>
+                        <option value="Delhi Daredevils">Delhi Capitals</option>
+                        <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                    </select><br><br>
+            
+          <label> Overs Bowled: </label><br>
+          <input class="form-input" type="text" name="overs" placeholder="Overs (>= 5.0) Eg. 7.2"><br><br>
+          <label> Runs Scored: </label><br>
+          <input class="form-input" type="text" name="runs" placeholder="Eg. 64"><br><br>
+          <label> Wickets Fallen: </label><br>
+          <input class="form-input" type="text" name="wickets" placeholder="Eg. 4"><br><br>
+          <label> Runs Scored in previous 5 Overs: </label><br>
+          <input class="form-input" type="text" name="runs_in_prev_5" placeholder="Eg. 42"><br><br>
+          <label> Wickets taken in previous 5 Overs: </label><br>
+          <input class="form-input" type="text" name="wickets_in_prev_5" placeholder="Eg. 3"><br><br>
+            
+          <input type="submit" class="myButton" value="Predict Score">
+                </form>
+
+
+      </div>
+    
+    
+</body>
+</html>
